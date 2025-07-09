@@ -28,6 +28,7 @@ const Home = () => {
                   100+ sisters already on board. Don’t miss your chance to be among them
                 </p>
               </div>
+              <img src="/images/hero.png" alt="Group of Muslimahs"  className='lg:mt-[3.5rem] mt-[1.5rem]'/>
             </article>
         </header>
         <main>
