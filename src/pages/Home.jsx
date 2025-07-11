@@ -145,8 +145,43 @@ const Home = () => {
             <img src="/images/hero2.png" alt="" />
           </article>
         </section>
-        <section>
-          
+        <section className='lg:px-[6.25rem] px-[1.56rem] flex flex-row items-center'>
+          <img src="/images/why.svg" alt="# ladies smiling" className='lg:inline hidden' />
+          <div>
+            <h2 className='lg:text-[3.6rem] text-[3rem] font-bold text-gradient'>
+              Why HerDeen?
+            </h2>
+            <p className='text-[#444444] font-normal text-[1.1rem]'>
+              Life is full. Between school, work, family, and personal goals—it’s easy for Ibadah to take the backseat. Many Muslim women struggle with:
+            </p>
+            <ul className='py-[1.5rem] px-[3rem] text-[#444444] font-normal text-[1rem]'>
+              <li className='list-disc'>
+                Feeling disconnected from spiritual routines
+              </li>
+              <li className='list-disc'>
+                Finding time for consistent Salah or Tilawah
+              </li>
+              <li className='list-disc'>
+                Lacking tools that combine planning and worship
+              </li>
+              <li className='list-disc'>
+                Wanting a faith-based, non-judgmental system
+              </li>
+            </ul>
+            <p className='text-[#444444] font-normal text-[1.1rem]'>
+              HerDeen is more than an app, it’s your digital companion for living intentionally as a Muslimah, with Allah at the center of every plan and habit.
+            </p>
+          </div>
+        </section>
+        <section className='lg:py-[3.75rem] lg:px-[6.25rem] p-[1.56rem] flex flex-col items-center lg:mx-auto lg:text-center text-start'>
+          <article className='lg:w-[48rem]'>
+            <h2 className='text-[#2B0E30] font-bold lg:text-[3rem] text-[2.2rem]'>
+              How It Works
+            </h2>
+            <p className='text-[#444444] font-normal text-[1rem] mt-[0.5rem]'>
+              HerDeen is designed to gently guide you through your day while keeping your Deen at the center. No pressure, no overwhelm—just peaceful progress, one habit at a time.
+            </p>
+          </article>
         </section>
       </section>
     </>

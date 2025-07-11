@@ -26,3 +26,13 @@
   width: 100%;
   transform: translateX(0);
 }
+
+.text-gradient {
+  background: linear-gradient(to right, #2B0E30, #62206E);
+  -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari) */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* For WebKit browsers */
+  text-fill-color: transparent;
+  /* Optional: Fallback for browsers that don't support text-fill-color */
+  color: #2B0E30; /* A solid color fallback */
+}
