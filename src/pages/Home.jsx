@@ -1,42 +1,144 @@
 // src/pages/Home.jsx
-import React from 'react'
+import React, { useState } from 'react';
 
 const Home = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
-      <section className='font-[DM Sans]'>
-        <header className='bg-[#A6C2A1] lg:px-[3rem] px-[1rem] py-[1rem]'>
-            <nav className='flex justify-between items-center'>
-              <img src="/images/logo.png" alt="HerDeen Logo"  className='w-[8rem] h-[5rem]'/>
-              <button className='bg-[#1E3D38] text-white font-normal text-[1rem] lg:px-[1.8rem] px-[0.8rem] py-[0.7rem] rounded-[0.6rem]'>
-                Join the Waitlist
-              </button>
+      <section className='font-[Poppins]'>
+        <section>
+          <header className='bg-[#721d63] px-[6.25rem] py-[2rem] justify-between items-center lg:flex hidden'>
+            <img src="/images/logo.svg" alt="HerDeen Logo" />
+            <nav className='text-white font-normal text-[1rem] gap-[2rem]'>
+              <ul className='flex gap-4'>
+                <li className='list-none relative group'>
+                  <a href="#" className='block py-2 '>Home</a>
+                  <span className='shooting-star-underline'></span>
+                </li>
+                <li className='list-none relative group'>
+                  <a href="#" className='block py-2'>About</a>
+                  <span className='shooting-star-underline'></span>
+                </li>
+                <li className='list-none relative group'>
+                  <a href="#" className='block py-2'>Feature</a>
+                  <span className='shooting-star-underline'></span>
+                </li>
+                <li className='list-none relative group'>
+                  <a href="#" className='block py-2'>FAQs</a>
+                  <span className='shooting-star-underline'></span>
+                </li>
+                <li className='list-none relative group'>
+                  <a href="#" className='block py-2'>Contact</a>
+                  <span className='shooting-star-underline'></span>
+                </li>
+              </ul>
             </nav>
-            <article className='mx-auto text-center font-bold lg:w-[45rem] w-[18rem]'>
-              <h1 className='text-[#1E3D38] font-[Source Serif 4] lg:text-[3rem] text-[2rem] my-[1rem] font-bold'>
-                Balance Your Deen & Dunya: One Day at a Time
-              </h1>
-              <p className='text-[#6B7280] font-normal'>
-                HerDeen is coming soon with the easiest way to to stay consistent in worship, plan your day with ease, and grow in faith, peace, and purpose. Be the first to know.
-              </p>
-              <button className='bg-[#1E3D38] text-white font-normal text-[1rem] lg:px-[2rem] px-[0.8rem] py-[0.7rem] rounded-[0.6rem] lg:mt-[1.5rem] mt-[1rem]'>
-                Join the Waitlist Now
-              </button>
-              <div className='mx-auto items-center flex flex-row mt-[2.2rem] lg:gap-[1.5rem] gap-[1rem] w-fit'>
-                <img src="/images/subscripers.svg" alt="Hereen Subscribers" className='lg:w-[13rem]  w-[8rem]' />
-                <p className='text-[#6B7280] font-medium lg:text-[1rem] text-[0.7rem] text-left lg:w-[20rem] w-[15rem]'>
-                  100+ sisters already on board. Don’t miss your chance to be among them
-                </p>
-              </div>
-              <img src="/images/hero.png" alt="Group of Muslimahs"  className='lg:mt-[3.5rem] mt-[1.5rem]'/>
-            </article>
-        </header>
-        <main>
+            <button className='bg-[#FFFFFF] text-[#721d63] rounded-[0.625rem] px-[1.5rem] py-[0.9rem] font-medium text-[1rem]'>
+              Join the Waitlist
+            </button>
+          </header>
 
-        </main>
+          {/* Mobile Header (Hamburger Menu) */}
+          <header className='lg:hidden flex bg-[#721d63] p-5 justify-between items-center relative z-20'>
+            <img src="/images/logo.svg" alt="HerDeen Logo" className='h-8' />
+            <button onClick={toggleMenu} className='focus:outline-none'>
+              <img
+                src={isMenuOpen ? "/images/close.svg" : "/images/menu.svg"}
+                alt={isMenuOpen ? "Menu close" : "Menu open"}
+                className='h-6 w-6 transition-transform duration-300'
+              />
+            </button>
+          </header>
+
+          {/* Overlay for when sidebar is open */}
+          {isMenuOpen && (
+            <div
+              className="fixed inset-0 bg-[#D6BCDB] bg-opacity-50 z-10 lg:hidden"
+              onClick={toggleMenu}
+            ></div>
+          )}
+
+          {/* Sidebar for small and medium screens */}
+          <div
+            className={`
+              fixed top-0 right-0 h-full w-64 mt-[4.5rem] bg-white text-[#444444]
+              transform transition-transform duration-500 ease-in-out
+              lg:hidden z-20
+              ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
+            `}
+          >
+            <div className='py-[2rem] px-[1.56rem]'>
+              <nav>
+                <ul className='flex flex-col gap-[0.75rem] text-[1rem] font-normal items-end'>
+                  <li className='list-none relative group'>
+                    <a href="#" className='block'>Home</a>
+                    <span className='shooting-star-underline'></span>
+                  </li>
+                  <li className='list-none relative group'>
+                    <a href="#" className='block'>About</a>
+                    <span className='shooting-star-underline'></span>
+                  </li>
+                  <li className='list-none relative group'>
+                    <a href="#" className='block'>Feature</a>
+                    <span className='shooting-star-underline'></span>
+                  </li>
+                  <li className='list-none relative group'>
+                    <a href="#" className='block'>FAQs</a>
+                    <span className='shooting-star-underline'></span>
+                  </li>
+                  <li className='list-none relative group'>
+                    <a href="#" className='block'>Contact</a>
+                    <span className='shooting-star-underline'></span>
+                  </li>
+                </ul>
+              </nav>
+              <div className='mt-8 text-end'>
+                  <button className='bg-[#62206E] text-white rounded-[0.625rem] px-[0.2rem] py-[0.6rem] font-medium text-[1rem] w-full max-w-[200px]'>
+                      Join the Waitlist
+                  </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='lg:py-[3.75rem] lg:px-[6.25rem] p-[1.56rem] flex lg:flex-row flex-col'>
+          <article className='lg:my-[6.759rem] my-[1rem]'>
+            <h1 className='lg:text-[3rem] text-[2rem]  text-[#2B0E30] font-black lg:w-[42rem]'>
+              Balance Your Deen & Dunya: One Day at a Time
+            </h1>
+            <p className='text-[1rem] font-normal text-[#444444] my-[0.75rem]'>
+              HerDeen is coming soon with the easiest way to to stay consistent in worship, plan your day with ease, and grow in faith, peace, and purpose. Be the first to know.
+            </p>
+            <p className='text-[0.8rem] font-normal text-[#444444]'>
+              100+ sisters already on board. Don’t miss your chance to be among them
+            </p>
+            <img src="/images/users.svg" alt="herDeen Subscribers" className='mt-[2rem]' />
+            <div className='rounded-[1rem] border-[#62206E] border-[1px] border-solid justify-between items-center shadow-lg'>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                className="flex-grow py-[1.2rem] px-[1.5rem] text-[#444444] focus:outline-none bg-transparent"
+              />
+              <button
+                type="submit"
+                className="bg-[#721d63] text-white rounded-[1rem] px-6 py-2 text-sm font-medium whitespace-nowrap"
+              >
+                Join the Waiting List Now
+              </button>
+            </div>
+          </article>
+          
+          <article>
+            <img src="/images/hero2.png" alt="" />
+          </article>
+        </section>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

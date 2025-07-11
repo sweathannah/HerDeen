@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
+
+/* You might want to adjust these colors to match your design from the image */
+body {
+  background-color: #5b216d; /* Example background color from image */
+}
+
+.nav {
+  display: flex;
+  justify-content: center; /* Center the navigation items if needed */
+  padding: 20px;
+}
+
+.group {
+  position: relative; /* Ensure pseudo-element is positioned relative to the li */
+  overflow: hidden; /* Hide the underline until it "shoots" in */
+  cursor: pointer;
+}
+
+.group a {
+  position: relative; /* Ensure text is above the underline */
+  z-index: 1; /* Keep text above the pseudo-element */
+  text-decoration: none; /* Remove default underline from anchor tag */
+  color: inherit; /* Inherit color from parent (white in this case) */
+}
+
+.shooting-star-underline {
+  position: absolute;
+  bottom: 0; /* Position at the bottom of the li */
+  left: 0;
+  width: 0; /* Start with no width */
+  height: 2px; /* Initial thinness of the underline */
+  background: linear-gradient(to right, transparent 0%, white 50%, white 100%); /* Gradient for shooting star effect */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  transition: width 0.4s ease-out, transform 0.4s ease-out; /* Animate width and transform */
+  /* Using a combination of width and transform for the shooting effect */
+}
+
+.group:hover .shooting-star-underline {
+  width: 100%; /* Expand to full width on hover */
+  transform: translateX(0); /* Move into view */
+  /*
+    For the "shooting from the end" effect, we need to consider the gradient.
+    If you want it to shoot from right to left (thin at right, wide at left):
+    background: linear-gradient(to left, transparent 0%, white 50%, white 100%);
+    transform: translateX(100%); (start off-screen to the right)
+    And then translateX(0) on hover.
+
+    For "shooting from left to right" (thin at left, wide at right) - which is what the image implies:
+    background: linear-gradient(to right, transparent 0%, white 50%, white 100%);
+    transform: translateX(-100%); (start off-screen to the left)
+    And then translateX(0) on hover.
+
+    The current CSS above implements "shooting from left to right" which matches the image more closely.
+  */
+}
 @tailwind utilities;
