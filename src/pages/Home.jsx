@@ -174,7 +174,7 @@ const Home = () => {
           </div>
         </section>
         <section className='lg:py-[3.75rem] lg:px-[6.25rem] p-[1.56rem] flex flex-col items-center lg:mx-auto lg:text-center text-start'>
-          <article className='lg:w-[48rem]'>
+          <article className='lg:w-[48rem] mb-[6.25rem]'>
             <h2 className='text-[#2B0E30] font-bold lg:text-[3rem] text-[2.2rem]'>
               How It Works
             </h2>
