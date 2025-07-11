@@ -116,25 +116,37 @@ const Home = () => {
             <p className='text-[0.8rem] font-normal text-[#444444]'>
               100+ sisters already on board. Don’t miss your chance to be among them
             </p>
-            <img src="/images/users.svg" alt="herDeen Subscribers" className='mt-[2rem]' />
-            <div className='rounded-[1rem] border-[#62206E] border-[1px] border-solid justify-between items-center shadow-lg'>
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="flex-grow py-[1.2rem] px-[1.5rem] text-[#444444] focus:outline-none bg-transparent"
-              />
+            <div className='flex flex-col relative items-start lg:mt-[4rem] mt-[5rem]'>
+              <img src="/images/users.svg" alt="herDeen Subscribers" className='mt-[2rem] z-50 absolute -top-20' />
+              <div className='rounded-[1rem] border-[#62206E] border-[1px] w-full px-[2rem] border-solid justify-between items-center shadow-lg flex lg:flex-row flex-col'>
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  className="flex-grow py-[1.2rem] px-[1.5rem] text-[#444444] focus:outline-none bg-transparent"
+                />
+                <button
+                  type="submit"
+                  className="lg:flex hidden bg-[#721d63] text-white rounded-[0.8rem] px-6 py-3 text-sm font-medium whitespace-nowrap ml-[8.3rem]"
+                >
+                  Join the Waiting List Now
+                </button> 
+              </div>
               <button
-                type="submit"
-                className="bg-[#721d63] text-white rounded-[1rem] px-6 py-2 text-sm font-medium whitespace-nowrap"
-              >
-                Join the Waiting List Now
-              </button>
+                  type="submit"
+                  className="lg:hidden flex bg-[#721d63] text-white rounded-[0.8rem] px-[5rem] py-[1rem] text-sm font-medium whitespace-nowrap mx-auto my-[1.5rem] w-full text-center"
+                >
+                  Join the Waiting List Now
+                </button>
             </div>
+            
           </article>
           
           <article>
             <img src="/images/hero2.png" alt="" />
           </article>
+        </section>
+        <section>
+          
         </section>
       </section>
     </>
