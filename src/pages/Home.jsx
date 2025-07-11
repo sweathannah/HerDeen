@@ -174,13 +174,141 @@ const Home = () => {
           </div>
         </section>
         <section className='lg:py-[3.75rem] lg:px-[6.25rem] p-[1.56rem] flex flex-col items-center lg:mx-auto lg:text-center text-start'>
-          <article className='lg:w-[48rem] mb-[6.25rem]'>
+          <article className='lg:w-[48rem] lg:mb-[6.25rem] mb-[2rem]'>
             <h2 className='text-[#2B0E30] font-bold lg:text-[3rem] text-[2.2rem]'>
               How It Works
             </h2>
             <p className='text-[#444444] font-normal text-[1rem] mt-[0.5rem]'>
-              HerDeen is designed to gently guide you through your day while keeping your Deen at the center. No pressure, no overwhelm—just peaceful progress, one habit at a time.
+              HerDeen is designed to gently guide you through your day while keeping your Deen at the center. No pressure, no overwhelm, just peaceful progress, one habit at a time.
             </p>
+          </article>
+          <article className='lg:flex hidden flex-col gap-[4rem] w-full'>
+            <div className='flex flex-row gap-[3.75rem] mx-auto ml-[23rem] w-fit'>
+              <img src="/images/deengoals.svg" alt="A doodle of a girl writing her goals" className='pt-[2rem]' />
+              <img src="/images/divider.svg" alt="A purple divider" />
+              <div className='flex flex-col text-[1.25rem] text-start w-[25rem]'>
+                <h3 className='bg-[#62206E] text-[#F2EAF3] w-[3.125rem] h-[3.125rem] rounded-full font-medium items-center flex justify-center mb-[1rem]'>1
+                </h3>
+                <h4 className='text-[#2B0E30] font-semibold'>
+                  Set Your Deen Goals
+                </h4>
+                <p className='text-[1rem] font-normal text-[#444444]'>
+                  Choose spiritual goals that truly matter to you—like praying all five daily Salah, reciting or memorizing the Qur’an, giving Sadaqah regularly or journaling your reflections.
+                </p>
+              </div>
+            </div>
+            <div className='flex flex-row gap-[3.75rem] mx-auto mr-[22.3rem] w-fit'>
+              <div className='flex flex-col text-[1.25rem] text-end items-end w-[25rem]'>
+                <h3 className='bg-[#62206E] text-[#F2EAF3] w-[3.125rem] h-[3.125rem] rounded-full font-medium items-center flex justify-center mb-[1rem]'>
+                  2
+                </h3>
+                <h4 className='text-[#2B0E30] font-semibold'>
+                  Plan Your Day with the AI Planner
+                </h4>
+                <p className='text-[1rem] font-normal text-[#444444]'>
+                  Let HerDeen help you organize both Deen and Dunya. The smart planner schedules tasks around Salah, your calendar, and daily energy flow—so you stay balanced and stress-free
+                </p>
+              </div>
+              <img src="/images/divider.svg" alt="A purple divider" />
+              <img src="/images/writing.svg" alt="A doodle of a pen and paper" className='pt-[2rem]' />
+            </div>
+            <div className='flex flex-row gap-[3.75rem] mx-auto ml-[23rem] w-fit'>
+              <img src="/images/calender.svg" alt="A doodle of a calendar" className='pt-[2rem]' />
+              <img src="/images/divider.svg" alt="A purple divider" />
+              <div className='flex flex-col text-[1.25rem] text-start w-[25rem]'>
+                <h3 className='bg-[#62206E] text-[#F2EAF3] w-[3.125rem] h-[3.125rem] rounded-full font-medium items-center flex justify-center mb-[1rem]'>
+                  3
+                </h3>
+                <h4 className='text-[#2B0E30] font-semibold'>
+                  Get Gentle Daily Reminders
+                </h4>
+                <p className='text-[1rem] font-normal text-[#444444]'>
+                  Stay connected to your faith with kind nudges throughout your day, from Salah times and adhkar to Qur’an verses, du’as, sunnah acts, and heartfelt reflections to uplift your soul.
+                </p>
+              </div>
+            </div>
+            <div className='flex flex-row gap-[3.75rem] mx-auto mr-[22.3rem] w-fit'>
+              <div className='flex flex-col text-[1.25rem] text-end items-end w-[25rem]'>
+                <h3 className='bg-[#62206E] text-[#F2EAF3] w-[3.125rem] h-[3.125rem] rounded-full font-medium items-center flex justify-center mb-[1rem]'>
+                  4
+                </h3>
+                <h4 className='text-[#2B0E30] font-semibold'>
+                  Connect with a Supportive Community
+                </h4>
+                <p className='text-[1rem] font-normal text-[#444444]'>
+                  You’re not alone on this journey. Share, learn, and grow with other Muslimahs who understand your path.
+                </p>
+              </div>
+              <img src="/images/divider.svg" alt="A purple divider" />
+              <img src="/images/community.svg" alt="A doodle of muslimahs" className='pt-[2rem]' />
+            </div>
+          </article>
+          <article className='lg:hidden flex flex-col gap-[1.5rem]'>
+            <div className='bg-[#FFFFFF] shadow-lg p-[0.75rem] w-full rounded-[0.75rem]'>
+              <img src="/images/deengoals.svg" alt="A doodle of a girl writing her goals" />
+              <div className='flex flex-col text-[1.2rem] text-start'>
+                <h3 className='bg-[#62206E] text-[#F2EAF3] w-[3.125rem] h-[3.125rem] rounded-full font-medium items-center flex justify-center mb-[1rem]'>1
+                </h3>
+                <h4 className='text-[#2B0E30] font-semibold'>
+                  Set Your Deen Goals
+                </h4>
+                <p className='text-[0.8rem] font-normal text-[#444444] mt-[0.2rem]'>
+                  Choose spiritual goals that truly matter to you, like praying all five daily Salah, reciting or memorizing the Qur’an, giving Sadaqah regularly or journaling your reflections.
+                </p>
+              </div>
+            </div>
+            <div className='bg-[#FFFFFF] shadow-lg p-[0.75rem] w-full rounded-[0.75rem]'>
+              <img src="/images/writing.svg" alt="A doodle of a pen and paper" />
+              <div className='flex flex-col text-[1.2rem] text-start'>
+                <h3 className='bg-[#62206E] text-[#F2EAF3] w-[3.125rem] h-[3.125rem] rounded-full font-medium items-center flex justify-center mb-[1rem]'>2
+                </h3>
+                <h4 className='text-[#2B0E30] font-semibold'>
+                  Plan Your Day with the AI Planner
+                </h4>
+                <p className='text-[0.8rem] font-normal text-[#444444] mt-[0.2rem]'>
+                  Let HerDeen help you organize both Deen and Dunya. The smart planner schedules tasks around Salah, your calendar, and daily energy flow—so you stay balanced and stress-free
+                </p>
+              </div>
+            </div>
+            <div className='bg-[#FFFFFF] shadow-lg p-[0.75rem] w-full rounded-[0.75rem]'>
+              <img src="/images/calender.svg" alt="A doodle of a calendar" />
+              <div className='flex flex-col text-[1.2rem] text-start'>
+                <h3 className='bg-[#62206E] text-[#F2EAF3] w-[3.125rem] h-[3.125rem] rounded-full font-medium items-center flex justify-center mb-[1rem]'>3
+                </h3>
+                <h4 className='text-[#2B0E30] font-semibold'>
+                  Get Gentle Daily Reminders
+                </h4>
+                <p className='text-[0.8rem] font-normal text-[#444444] mt-[0.2rem]'>
+                  Stay connected to your faith with kind nudges throughout your day, from Salah times and adhkar to Qur’an verses, du’as, sunnah acts, and heartfelt reflections to uplift your soul.
+                </p>
+              </div>
+            </div>
+            <div className='bg-[#FFFFFF] shadow-lg p-[0.75rem] w-full rounded-[0.75rem]'>
+              <img src="/images/community.svg" alt="A doodle of muslimahs" />
+              <div className='flex flex-col text-[1.2rem] text-start'>
+                <h3 className='bg-[#62206E] text-[#F2EAF3] w-[3.125rem] h-[3.125rem] rounded-full font-medium items-center flex justify-center mb-[1rem]'>4
+                </h3>
+                <h4 className='text-[#2B0E30] font-semibold'>
+                  Connect with a Supportive Community
+                </h4>
+                <p className='text-[0.8rem] font-normal text-[#444444] mt-[0.2rem]'>
+                  You’re not alone on this journey. Share, learn, and grow with other Muslimahs who understand your path.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section className='lg:py-[3.75rem] lg:px-[6.25rem] p-[1.56rem] flex flex-col items-center lg:mx-auto lg:text-center text-start'>
+          <article className='lg:w-[48rem] lg:mb-[6.25rem] mb-[2rem]'>
+            <h2 className='text-[2B0E30] font-bold lg:text-[3rem] text-[2.2rem]'>
+              What You’ll Find Inside
+            </h2>
+            <p className='text-[#444444] font-normal text-[1rem] mt-[0.5rem]'>
+              HerDeen is more than an app, it’s your digital companion for living intentionally as a Muslimah, with Allah at the center of every plan and habit
+            </p>
+          </article>
+          <article className='flex flex-row flex-wrap gap-[2.5rem]'>
+
           </article>
         </section>
       </section>

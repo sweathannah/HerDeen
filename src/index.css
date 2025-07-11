@@ -1,3 +1,7 @@
+body{
+  background-color: #F2EAF3;
+}
+
 .group {
   position: relative;
   overflow: hidden;
