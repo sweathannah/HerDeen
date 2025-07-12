@@ -307,8 +307,68 @@ const Home = () => {
               HerDeen is more than an app, it’s your digital companion for living intentionally as a Muslimah, with Allah at the center of every plan and habit
             </p>
           </article>
-          <article className='flex flex-row flex-wrap gap-[2.5rem]'>
-
+          <article className='flex flex-row flex-wrap gap-[2.5rem] mx-auto'>
+            <div className='lg:w-[22rem] w-full bg-[#FFFFFF] rounded-[0.75rem] p-[1.5rem] text-start'>
+              <img src="/images/points.svg" alt="Point Icon" className='mb-[3rem] bg-[#F2EAF3] p-[0.75rem] rounded-[0.625rem]'/>
+              <h3 className='text-[#2B0E30] font-semibold text-[1.5rem] mb-[0.2rem]'>
+                Salah & Qur’an Reminder
+              </h3>
+              <p className='text-[#333333] font-normal text-[1rem]'>
+                Stay consistent with smart alerts that respect your schedule and flow.
+              </p>
+            </div>
+            <div className='lg:w-[22rem] w-full bg-[#FFFFFF] rounded-[0.75rem] p-[1.5rem] text-start'>
+              <img src="/images/points.svg" alt="Point Icon" className='mb-[3rem] bg-[#D6BCDB] p-[0.75rem] rounded-[0.625rem]'/>
+              <h3 className='text-[#2B0E30] font-semibold text-[1.5rem] mb-[0.2rem]'>
+                AI Day Planner
+              </h3>
+              <p className='text-[#333333] font-normal text-[1rem]'>
+                Organize your day around prayer, not the other way around.
+              </p>
+            </div>
+            <div className='lg:w-[22rem] w-full bg-[#FFFFFF] rounded-[0.75rem] p-[1.5rem] text-start'>
+              <img src="/images/points2.svg" alt="Point Icon" className='mb-[3rem] bg-[#7A288A] p-[0.75rem] rounded-[0.625rem]'/>
+              <h3 className='text-[#2B0E30] font-semibold text-[1.5rem] mb-[0.2rem]'>
+                HerQur’an Journey
+              </h3>
+              <p className='text-[#333333] font-normal text-[1rem]'>
+                Track your memorization and Muraja’ah effortlessly.
+              </p>
+            </div>
+            <div className='lg:w-[22rem] w-full bg-[#FFFFFF] rounded-[0.75rem] p-[1.5rem] text-start'>
+              <img src="/images/points2.svg" alt="Point Icon" className='mb-[3rem] bg-[#62206E] p-[0.75rem] rounded-[0.625rem]'/>
+              <h3 className='text-[#2B0E30] font-semibold text-[1.5rem] mb-[0.2rem]'>
+                Modest Wall
+              </h3>
+              <p className='text-[#333333] font-normal text-[1rem]'>
+                A space to share modest outfits, book gems, wins, and du’as.
+              </p>
+            </div>
+            <div className='lg:w-[22rem] w-full bg-[#FFFFFF] rounded-[0.75rem] p-[1.5rem] text-start'>
+              <img src="/images/points2.svg" alt="Point Icon" className='mb-[3rem] bg-[#491853] p-[0.75rem] rounded-[0.625rem]'/>
+              <h3 className='text-[#2B0E30] font-semibold text-[1.5rem] mb-[0.2rem]'>
+                Ghusl & Menstrual Guide
+              </h3>
+              <p className='text-[#333333] font-normal text-[1rem]'>
+                Faith-aligned support for cycle tracking and spiritual hygiene
+              </p>
+            </div>
+            <div className='lg:w-[22rem] w-full bg-[#FFFFFF] rounded-[0.75rem] p-[1.5rem] text-start'>
+              <img src="/images/points2.svg" alt="Point Icon" className='mb-[3rem] bg-[#2B0E30] p-[0.75rem] rounded-[0.625rem]'/>
+              <h3 className='text-[#2B0E30] font-semibold text-[1.5rem] mb-[0.2rem]'>
+                Islamic Book Library
+              </h3>
+              <p className='text-[#333333] font-normal text-[1rem]'>
+                Explore different books, review, and track your spiritual reads.
+              </p>
+            </div>
+          </article>
+        </section>
+        <section className='lg:py-[3.75rem] lg:px-[6.25rem] p-[1.56rem] flex flex-col items-center lg:mx-auto lg:text-center text-start'>
+          <article className='lg:w-[48rem] lg:mb-[6.25rem] mb-[2rem]'>
+            <h2 className='text-[2B0E30] font-bold lg:text-[3rem] text-[2.2rem] text-center'>
+              Words from the Community
+            </h2>
           </article>
         </section>
       </section>
