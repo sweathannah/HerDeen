@@ -1,5 +1,6 @@
 // src/pages/Home.jsx
 import React, { useState } from 'react';
+import FAQSection from '../components/faq_section'; 
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -370,7 +371,270 @@ const Home = () => {
               Words from the Community
             </h2>
           </article>
+          <article className='lg:flex hidden flex-col mx-auto'>
+            <div className='bg-[#491853] p-[1.5rem] rounded-[1rem] shadow-lg flex flex-row w-fit items-start gap-[1.25rem] text-start ml-[20rem]'>
+              <div>
+                <img src="/images/Halima.jpg" alt="Halima Picture" className='w-[3.37rem] h-[3.37rem] rounded-full' />
+              </div>
+              <div className='text-[#FFFFFF] font-semibolds text-[0.77rem]'>
+                <h4 className='text-[1.156rem]'>
+                  Halimah Ibrahim
+                </h4>
+                <p className='mb-[1rem] '>
+                  ~ 35 years
+                </p>
+                <p className='w-[17.3rem]'>
+                  As a revert, I’m always looking for guidance and sisterhood to improve my life. HerDeen feels like both.
+                </p>
+              </div>
+            </div>
+            <div className='bg-[#FAE0FF] p-[1.5rem] rounded-[1rem] shadow-lg flex flex-row w-fit items-start gap-[1.25rem] text-start'>
+              <div>
+                <img src="/images/fatima.jpg" alt="Fatima Picture" className='w-[3.37rem] h-[3.37rem] rounded-full' />
+              </div>
+              <div className='text-[#000000] font-semibolds text-[0.77rem]'>
+                <h4 className='text-[1.156rem]'>
+                  Fatimah Muhammed
+                </h4>
+                <p className='mb-[1rem] '>
+                  ~ 28 years
+                </p>
+                <p className='w-[17.3rem]'>
+                  Can’t wait to use the AI planner. I need this kind of peace in my life. And also be part of sisterhood community.
+                </p>
+              </div>
+            </div>
+            <div className='bg-[#F3AFAF] p-[1.5rem] rounded-[1rem] shadow-lg flex flex-row w-fit items-start gap-[1.25rem] text-start ml-[26rem]'>
+              <div>
+                <img src="/images/aisha.jpg" alt="Aaisha Picture" className='w-[4rem] h-[4rem] rounded-full' />
+              </div>
+              <div className='text-[#000000] font-semibolds text-[0.77rem]'>
+                <h4 className='text-[1.156rem]'>
+                  Aisha Ibrahim
+                </h4>
+                <p className='mb-[1rem] '>
+                  ~ 21 years
+                </p>
+                <p className='w-[17.3rem]'>
+                  I’ve always wanted something like this, something that helps me stay on track without judgment.
+                </p>
+              </div>
+            </div>
+            <div className='bg-[#37123E] p-[1.5rem] rounded-[1rem] shadow-lg flex flex-row w-fit items-start gap-[1.25rem] text-start ml-[7rem]'>
+              <div>
+                <img src="/images/bushroh.jpg" alt="Bushroh's Picture" className='w-[3.37rem] h-[3.37rem] rounded-full' />
+              </div>
+              <div className='text-[#ffffff] font-semibolds text-[0.77rem]'>
+                <h4 className='text-[1.156rem]'>
+                  Bushroh Khalid
+                </h4>
+                <p className='mb-[1rem] '>
+                  ~ 22 years
+                </p>
+                <p className='w-[17.3rem]'>
+                  HerDeen would’ve helped me stay consistent with my Qur’an memorization. I keep starting and stopping because I feel so disorganized.
+                </p>
+              </div>
+            </div>
+            <div className='bg-[#7A288A] p-[1.5rem] rounded-[1rem] shadow-lg flex flex-row w-fit items-start gap-[1.25rem] text-start ml-[33rem]'>
+              <div>
+                <img src="/images/zainab.jpg" alt="Zainab Picture" className='w-[4rem] h-[4rem] rounded-full' />
+              </div>
+              <div className='text-[#ffffff] font-semibolds text-[0.77rem]'>
+                <h4 className='text-[1.156rem]'>
+                  Zainab Danlami
+                </h4>
+                <p className='mb-[1rem] '>
+                  ~ 35 years
+                </p>
+                <p className='w-[17.3rem]'>
+                  I love that it includes a menstrual and ghusl tracker. During my cycle, I often lose momentum. This would help me stay connected spiritually.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article className='lg:hidden flex flex-row flex-wrap justify-center gap-[0.75rem] '>
+            <div className='bg-[#491853] p-[1.5rem] rounded-[1rem] shadow-lg flex flex-row items-start gap-[1.25rem] text-start mx-[0.2rem]'>
+              <div>
+                <img src="/images/Halima.jpg" alt="Halima Picture" className='w-[3.37rem] h-[3.37rem] rounded-full' />
+              </div>
+              <div className='text-[#FFFFFF] font-semibolds text-[0.77rem]'>
+                <h4 className='text-[1.156rem]'>
+                  Halimah Ibrahim
+                </h4>
+                <p className='mb-[1rem] '>
+                  ~ 35 years
+                </p>
+                <p className='w-[17.3rem]'>
+                  As a revert, I’m always looking for guidance and sisterhood to improve my life. HerDeen feels like both.
+                </p>
+              </div>
+            </div>
+            <div className='bg-[#FAE0FF] p-[1.5rem] rounded-[1rem] shadow-lg flex flex-row w-fit items-start gap-[1.25rem] text-start mx-[0.2rem]'>
+              <div>
+                <img src="/images/fatima.jpg" alt="Fatima Picture" className='w-[3.37rem] h-[3.37rem] rounded-full' />
+              </div>
+              <div className='text-[#000000] font-semibolds text-[0.77rem]'>
+                <h4 className='text-[1.156rem]'>
+                  Fatimah Muhammed
+                </h4>
+                <p className='mb-[1rem] '>
+                  ~ 28 years
+                </p>
+                <p className='w-[17.3rem]'>
+                  Can’t wait to use the AI planner. I need this kind of peace in my life. And also be part of sisterhood community.
+                </p>
+              </div>
+            </div>
+            <div className='bg-[#F3AFAF] p-[1.5rem] rounded-[1rem] shadow-lg flex flex-row w-fit items-start gap-[1.25rem] text-start mx-[0.2rem]'>
+              <div>
+                <img src="/images/aisha.jpg" alt="Aaisha Picture" className='w-[4rem] h-[4rem] rounded-full' />
+              </div>
+              <div className='text-[#000000] font-semibolds text-[0.77rem]'>
+                <h4 className='text-[1.156rem]'>
+                  Aisha Ibrahim
+                </h4>
+                <p className='mb-[1rem] '>
+                  ~ 21 years
+                </p>
+                <p className='w-[17.3rem]'>
+                  I’ve always wanted something like this, something that helps me stay on track without judgment.
+                </p>
+              </div>
+            </div>
+            <div className='bg-[#37123E] p-[1.5rem] rounded-[1rem] shadow-lg flex flex-row w-fit items-start gap-[1.25rem] text-start mx-[0.2rem]'>
+              <div>
+                <img src="/images/bushroh.jpg" alt="Bushroh's Picture" className='w-[3.37rem] h-[3.37rem] rounded-full' />
+              </div>
+              <div className='text-[#ffffff] font-semibolds text-[0.77rem]'>
+                <h4 className='text-[1.156rem]'>
+                  Bushroh Khalid
+                </h4>
+                <p className='mb-[1rem] '>
+                  ~ 22 years
+                </p>
+                <p className='w-[17.3rem]'>
+                  HerDeen would’ve helped me stay consistent with my Qur’an memorization. I keep starting and stopping because I feel so disorganized.
+                </p>
+              </div>
+            </div>
+            <div className='bg-[#7A288A] p-[1.5rem] rounded-[1rem] shadow-lg flex flex-row w-fit items-start gap-[1.25rem] text-start mx-[0.2rem]'>
+              <div>
+                <img src="/images/zainab.jpg" alt="Zainab Picture" className='w-[4rem] h-[4rem] rounded-full' />
+              </div>
+              <div className='text-[#ffffff] font-semibolds text-[0.77rem]'>
+                <h4 className='text-[1.156rem]'>
+                  Zainab Danlami
+                </h4>
+                <p className='mb-[1rem] '>
+                  ~ 35 years
+                </p>
+                <p className='w-[17.3rem]'>
+                  I love that it includes a menstrual and ghusl tracker. During my cycle, I often lose momentum. This would help me stay connected spiritually.
+                </p>
+              </div>
+            </div>
+          </article>
         </section>
+        <section className="flex flex-col justify-center lg:bg-[url('/images/experience.svg')] bg-[url('/images/experience2.svg')] bg-cover bg-center lg:py-[12.626rem] py-[5rem] text-center items-center text-[#FFFFFF]" >
+          <div className='lg:w-[50.25rem] w-[22.5rem]'>
+            <h2 className='font-bold text-[2.6rem]'>
+              Be the First to Experience HerDeen
+            </h2>
+            <p className='lg:text-[1.25rem] text-[1rem] px-[1rem] font-normal mb-[3.7rem]'>
+              We’re launching soon, in shaa Allah. Join our waitlist and be the first to access the app, receive behind-the-scenes updates, and enjoy early user rewards
+            </p>
+            <div className='flex flex-col relative items-start lg:mt-[4rem] mt-[5rem]'>
+              <img src="/images/subscribers2.svg" alt="herDeen Subscribers" className='mt-[2rem] z-50 absolute -top-20' />
+              <div className='flex lg:flex-row flex-col gap-[1rem] mx-auto'>
+                <div className='rounded-[1rem] border-[#62206E] bg-white border-[1px] lg:w-[33.75rem] px-[2rem] border-solid justify-between items-center shadow-lg flex lg:flex-row flex-col'>
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    className="flex-grow py-[1.2rem] px-[1.5rem] text-[#444444] focus:outline-none bg-transparent"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="bg-[#721d63] text-white rounded-[0.8rem] px-6 py-3 text-sm font-medium whitespace-nowrap text-center"
+                >
+                  Join the Waiting List Now
+                </button> 
+              </div>
+              {/* <button
+                  type="submit"
+                  className="lg:hidden flex bg-[#721d63] text-white rounded-[0.8rem] px-[5rem] py-[1rem] text-sm font-medium whitespace-nowrap mx-auto my-[1.5rem] w-full text-center"
+                >
+                  Join the Waiting List Now
+                </button> */}
+            </div>
+          </div>
+        </section>
+
+        <FAQSection />
+
+        <section className='bg-[#F2EAF3] py-[5rem] lg:px-[6.25rem] px-[1.56rem] flex flex-col justify-center items-center text-center '>
+          <h3 className='text-[#2B0E30] font-bold text-[2.6rem] mb-[1.5rem]'>
+            Follow the Journey
+          </h3>
+          <p className='text-[#333333] font- text-[1.125rem] lg:w-[44.19rem]'>
+            We’re building HerDeen with heart, dua, and your feedback. Connect with us on social to get real-time updates and behind-the-scenes progress
+          </p>
+          <div className='mt-[2.125rem] flex flex-row gap-[0.8rem]'>
+            <a href="#">
+              <img src="/images/facebook.svg" alt="Facebook Icon" />
+            </a>
+            <a href="#">
+              <img src="/images/x.svg" alt="Twitter Icon" />
+            </a>
+            <a href="#">
+              <img src="/images/IG.svg" alt="IG iIcon" />
+            </a>
+          </div>
+        </section>
+
+        <footer className='bg-[#FDF9FF] lg:px-[6.25rem] px-[1.56rem] lg:pt-[6.25rem] pt-[4rem] pb-[3.75rem] text-[#444444] font-normal'>
+          <section className='lg:gap-[6.25rem] gap-[2rem] flex flex-row flex-wrap lg:pb-[3.125rem] border-b-[#D6BCDB] border-b-[1px] border-solid'>
+            <div className='flex flex-col max-w-[32rem] lg:pb-[0] pb-[2rem] lg:border-b-0 border-b-[#D6BCDB] border-b-[1px] border-solid'>
+              <a href="#">
+                <img src="/images/logo2.svg" alt="HerDeen's Logo" />
+              </a>
+              <p className='text-[1rem] mt-[1.5rem]'>
+                HerDeen is more than an app, it’s your digital companion for living intentionally as a Muslimah, with Allah at the center of every plan and habit.
+              </p>
+            </div>
+            <div className='flex flex-col lg:gap-[1.5rem] gap-[0.4rem] w-[12.5rem]'>
+              <h4 className='text-[#62206E] text-[1.25rem] font-bold'>
+                Sections
+              </h4>
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Feature</a>
+              <a href="#">FAQs</a>
+            </div>
+            <div className='flex flex-col lg:gap-[1.5rem] gap-[0.6rem] lg:pb-[0] pb-[2rem] lg:border-b-0 border-b-[#D6BCDB] border-b-[1px] border-solid'>
+              <h4 className='text-[#62206E] text-[1.25rem] font-bold'>
+                Contact Us
+              </h4>
+              <a href="mailto:contact@herdeen.com" className='flex gap-[0.75rem] items-center'>
+                <img src="/images/mail.svg" alt="Mail Icon" />
+                <span>contact@herdeen.com</span>
+              </a>
+              <a href="tel:+8035700214" className='flex gap-[0.75rem] items-center'>
+                <img src="/images/tel.svg" alt="Phone Icon" />
+                <span>+234 803 5700 214</span>
+              </a>
+              <a href="#" className='flex gap-[0.75rem] items-center'>
+                <img src="/images/location.svg" alt="Location Icon" />
+                <span>Ilorin, Nigeria.</span>
+              </a>
+            </div>
+          </section>
+          <section  className='lg:justify-between flex flex-row flex-wrap lg:pt-[3.125rem] pt-[2rem]'>
+           <p>© 2025 HerDeen</p>
+           <p>All Rights Reserved | <a href="#" className='text-[#62206E] underline'>Terms and Conditions | Privacy Policy </a></p> 
+          </section>
+        </footer>
       </section>
     </>
   );
