@@ -2,12 +2,17 @@
 import React, { useState } from 'react';
 import FAQSection from '../components/faq_section';
 import WaitlistForm from '../components/WaitlistForm'; 
+import BackToTopButton from '../components/BackToTopButton';
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => { 
+    setIsMenuOpen(false);
   };
 
   return (
@@ -63,53 +68,57 @@ const Home = () => {
           {isMenuOpen && (
             <div
               className="fixed inset-0 bg-[#D6BCDB] bg-opacity-50 z-10 lg:hidden"
-              onClick={toggleMenu}
+              onClick={closeMenu} // Click overlay to close
             ></div>
           )}
 
+
           {/* Sidebar for small and medium screens */}
           <div
-            className={`
-              fixed top-0 right-0 h-full w-64 mt-[4.5rem] bg-white text-[#444444]
-              transform transition-transform duration-500 ease-in-out
-              lg:hidden z-20
-              ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
-            `}
-          >
-            <div className='py-[2rem] px-[1.56rem]'>
-              <nav>
-                <ul className='flex flex-col gap-[0.75rem] text-[1rem] font-normal items-end'>
-                  <li className='list-none relative group'>
-                    <a href="#Home" className='block'>Home</a>
-                    <span className='shooting-star-underline'></span>
-                  </li>
-                  <li className='list-none relative group'>
-                    <a href="#About" className='block'>About</a>
-                    <span className='shooting-star-underline'></span>
-                  </li>
-                  <li className='list-none relative group'>
-                    <a href="#Feature" className='block'>Feature</a>
-                    <span className='shooting-star-underline'></span>
-                  </li>
-                  <li className='list-none relative group'>
-                    <a href="#FAQs" className='block'>FAQs</a>
-                    <span className='shooting-star-underline'></span>
-                  </li>
-                  <li className='list-none relative group'>
-                    <a href="#Contact" className='block'>Contact</a>
-                    <span className='shooting-star-underline'></span>
-                  </li>
-                </ul>
-              </nav>
-              <div className='mt-8 text-end'>
-                <a href="#Join">
-                  <button className='bg-[#62206E] text-white rounded-[0.625rem] px-[0.2rem] py-[0.6rem] font-medium text-[1rem] w-full max-w-[200px]'>
-                      Join the Waitlist
-                  </button>
-                </a>
-              </div>
+          className={`
+            fixed top-0 right-0 h-full w-64 mt-[4.5rem] bg-white text-[#444444]
+            transform transition-transform duration-500 ease-in-out
+            lg:hidden z-20
+            ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
+          `}
+        >
+          <div className='py-[2rem] px-[1.56rem]'>
+            <nav>
+              <ul className='flex flex-col gap-[0.75rem] text-[1rem] font-normal items-end'>
+                <li className='list-none relative group'>
+                  <a href="#Home" className='block' onClick={closeMenu}>Home</a> {/* Add onClick here */}
+                  <span className='shooting-star-underline'></span>
+                </li>
+                <li className='list-none relative group'>
+                  <a href="#About" className='block' onClick={closeMenu}>About</a> {/* Add onClick here */}
+                  <span className='shooting-star-underline'></span>
+                </li>
+                <li className='list-none relative group'>
+                  <a href="#Feature" className='block' onClick={closeMenu}>Feature</a> {/* Add onClick here */}
+                  <span className='shooting-star-underline'></span>
+                </li>
+                <li className='list-none relative group'>
+                  <a href="#FAQs" className='block' onClick={closeMenu}>FAQs</a> {/* Add onClick here */}
+                  <span className='shooting-star-underline'></span>
+                </li>
+                <li className='list-none relative group'>
+                  <a href="#Contact" className='block' onClick={closeMenu}>Contact</a> {/* Add onClick here */}
+                  <span className='shooting-star-underline'></span>
+                </li>
+              </ul>
+            </nav>
+            <div className='mt-8 text-end'>
+              <a href="#Join">
+                <button
+                  className='bg-[#62206E] text-white rounded-[0.625rem] px-[0.2rem] py-[0.6rem] font-medium text-[1rem] w-full max-w-[200px]'
+                  onClick={closeMenu} // Also close when "Join the Waitlist" button is clicked
+                >
+                  Join the Waitlist
+                </button>
+              </a>
             </div>
           </div>
+        </div>
         </section>
         <section className='lg:py-[3.75rem] lg:px-[6.25rem] p-[1.56rem] flex lg:flex-row flex-col' id='Home'>
           <article className='lg:my-[6.759rem] my-[1rem]'>
@@ -605,6 +614,7 @@ const Home = () => {
            <p>All Rights Reserved | <a href="#" className='text-[#62206E] underline'>Terms and Conditions | Privacy Policy </a></p> 
           </section>
         </footer>
+        <BackToTopButton />
       </section>
     </>
   );

@@ -55,4 +55,58 @@ body {
     The current CSS above implements "shooting from left to right" which matches the image more closely.
   */
 }
+
+/* Base hidden state */
+.fade-hidden {
+  opacity: 0;
+  transform: translateY(20px); /* Slide up slightly */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Base visible state */
+.fade-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Example: Slide in from left */
+.slide-from-left-hidden {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-from-left-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Example: Scale in */
+.scale-in-hidden {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.scale-in-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Underline animation for nav links (already present from your code, just for context) */
+.shooting-star-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Starts hidden */
+  height: 2px; /* Thickness of the line */
+  background-color: white; /* Color of the line */
+  transition: width 0.3s ease-in-out; /* Animation */
+}
+
+.group:hover .shooting-star-underline {
+  width: 100%; /* Expands on hover */
+}
+
+
 @tailwind utilities;
