@@ -122,8 +122,12 @@ const Home = () => {
             <p className='text-[0.8rem] font-normal text-[#444444]'>
               100+ sisters already on board. Don’t miss your chance to be among them
             </p>
-            <WaitlistForm />
-            
+            <WaitlistForm
+              variant="default"
+              showImage={true}
+              imageSrc="/images/users.svg"
+              imageAlt="herDeen Subscribers"
+            />            
           </article>
           
           <article>
@@ -528,30 +532,12 @@ const Home = () => {
             <p className='lg:text-[1.25rem] text-[1rem] px-[1rem] font-normal mb-[3.7rem]'>
               We’re launching soon, in shaa Allah. Join our waitlist and be the first to access the app, receive behind-the-scenes updates, and enjoy early user rewards
             </p>
-            <div className='flex flex-col relative items-start lg:mt-[4rem] mt-[5rem]'>
-              <img src="/images/subscribers2.svg" alt="herDeen Subscribers" className='mt-[2rem] z-50 absolute -top-20' />
-              <div className='flex lg:flex-row flex-col gap-[1rem] mx-auto w-fit'>
-                <div className='rounded-[1rem] border-[#62206E] bg-white border-[1px] lg:w-[33.75rem] px-[2rem] border-solid justify-between items-center shadow-lg flex lg:flex-row flex-col'>
-                  <input
-                    type="email"
-                    placeholder="Enter your email address"
-                    className="flex-grow py-[1.2rem] px-[1.5rem] text-[#444444] focus:outline-none bg-transparent"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="bg-[#721d63] text-white rounded-[0.8rem] px-6 py-3 text-sm font-medium whitespace-nowrap text-center"
-                >
-                  Join the Waiting List Now
-                </button> 
-              </div>
-              {/* <button
-                  type="submit"
-                  className="lg:hidden flex bg-[#721d63] text-white rounded-[0.8rem] px-[5rem] py-[1rem] text-sm font-medium whitespace-nowrap mx-auto my-[1.5rem] w-full text-center"
-                >
-                  Join the Waiting List Now
-                </button> */}
-            </div>
+            <WaitlistForm
+              variant="compact"
+              showImage={true}
+              imageSrc="/images/subscribers2.svg"
+              imageAlt="More Subscribers"
+            />
           </div>
         </section>
 
