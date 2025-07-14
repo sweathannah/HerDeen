@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import React, { useState } from 'react';
-import FAQSection from '../components/faq_section'; 
+import FAQSection from '../components/faq_section';
+import WaitlistForm from '../components/WaitlistForm'; 
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,30 +19,32 @@ const Home = () => {
             <nav className='text-white font-normal text-[1rem] gap-[2rem]'>
               <ul className='flex gap-4'>
                 <li className='list-none relative group'>
-                  <a href="#" className='block py-2 '>Home</a>
+                  <a href="#Home" className='block py-2 '>Home</a>
                   <span className='shooting-star-underline'></span>
                 </li>
                 <li className='list-none relative group'>
-                  <a href="#" className='block py-2'>About</a>
+                  <a href="#About" className='block py-2'>About</a>
                   <span className='shooting-star-underline'></span>
                 </li>
                 <li className='list-none relative group'>
-                  <a href="#" className='block py-2'>Feature</a>
+                  <a href="#Features" className='block py-2'>Feature</a>
                   <span className='shooting-star-underline'></span>
                 </li>
                 <li className='list-none relative group'>
-                  <a href="#" className='block py-2'>FAQs</a>
+                  <a href="#FAQs" className='block py-2'>FAQs</a>
                   <span className='shooting-star-underline'></span>
                 </li>
                 <li className='list-none relative group'>
-                  <a href="#" className='block py-2'>Contact</a>
+                  <a href="#Contact" className='block py-2'>Contact</a>
                   <span className='shooting-star-underline'></span>
                 </li>
               </ul>
             </nav>
-            <button className='bg-[#FFFFFF] text-[#721d63] rounded-[0.625rem] px-[1.5rem] py-[0.9rem] font-medium text-[1rem]'>
-              Join the Waitlist
-            </button>
+            <a href="#Join">
+              <button className='bg-[#FFFFFF] text-[#721d63] rounded-[0.625rem] px-[1.5rem] py-[0.9rem] font-medium text-[1rem]'>
+                Join the Waitlist
+              </button>
+            </a>
           </header>
 
           {/* Mobile Header (Hamburger Menu) */}
@@ -77,36 +80,38 @@ const Home = () => {
               <nav>
                 <ul className='flex flex-col gap-[0.75rem] text-[1rem] font-normal items-end'>
                   <li className='list-none relative group'>
-                    <a href="#" className='block'>Home</a>
+                    <a href="#Home" className='block'>Home</a>
                     <span className='shooting-star-underline'></span>
                   </li>
                   <li className='list-none relative group'>
-                    <a href="#" className='block'>About</a>
+                    <a href="#About" className='block'>About</a>
                     <span className='shooting-star-underline'></span>
                   </li>
                   <li className='list-none relative group'>
-                    <a href="#" className='block'>Feature</a>
+                    <a href="#Feature" className='block'>Feature</a>
                     <span className='shooting-star-underline'></span>
                   </li>
                   <li className='list-none relative group'>
-                    <a href="#" className='block'>FAQs</a>
+                    <a href="#FAQs" className='block'>FAQs</a>
                     <span className='shooting-star-underline'></span>
                   </li>
                   <li className='list-none relative group'>
-                    <a href="#" className='block'>Contact</a>
+                    <a href="#Contact" className='block'>Contact</a>
                     <span className='shooting-star-underline'></span>
                   </li>
                 </ul>
               </nav>
               <div className='mt-8 text-end'>
+                <a href="#Join">
                   <button className='bg-[#62206E] text-white rounded-[0.625rem] px-[0.2rem] py-[0.6rem] font-medium text-[1rem] w-full max-w-[200px]'>
                       Join the Waitlist
                   </button>
+                </a>
               </div>
             </div>
           </div>
         </section>
-        <section className='lg:py-[3.75rem] lg:px-[6.25rem] p-[1.56rem] flex lg:flex-row flex-col'>
+        <section className='lg:py-[3.75rem] lg:px-[6.25rem] p-[1.56rem] flex lg:flex-row flex-col' id='Home'>
           <article className='lg:my-[6.759rem] my-[1rem]'>
             <h1 className='lg:text-[3rem] text-[2rem]  text-[#2B0E30] font-black lg:w-[42rem]'>
               Balance Your Deen & Dunya: One Day at a Time
@@ -117,28 +122,7 @@ const Home = () => {
             <p className='text-[0.8rem] font-normal text-[#444444]'>
               100+ sisters already on board. Don’t miss your chance to be among them
             </p>
-            <div className='flex flex-col relative items-start lg:mt-[4rem] mt-[5rem]'>
-              <img src="/images/users.svg" alt="herDeen Subscribers" className='mt-[2rem] z-50 absolute -top-20' />
-              <div className='rounded-[1rem] border-[#62206E] border-[1px] w-full px-[2rem] border-solid justify-between items-center shadow-lg flex lg:flex-row flex-col'>
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="flex-grow py-[1.2rem] px-[1.5rem] text-[#444444] focus:outline-none bg-transparent"
-                />
-                <button
-                  type="submit"
-                  className="lg:flex hidden bg-[#721d63] text-white rounded-[0.8rem] px-6 py-3 text-sm font-medium whitespace-nowrap ml-[8.3rem]"
-                >
-                  Join the Waiting List Now
-                </button> 
-              </div>
-              <button
-                  type="submit"
-                  className="lg:hidden flex bg-[#721d63] text-white rounded-[0.8rem] px-[5rem] py-[1rem] text-sm font-medium whitespace-nowrap mx-auto my-[1.5rem] w-full text-center"
-                >
-                  Join the Waiting List Now
-                </button>
-            </div>
+            <WaitlistForm />
             
           </article>
           
@@ -146,7 +130,7 @@ const Home = () => {
             <img src="/images/hero2.png" alt="" />
           </article>
         </section>
-        <section className='lg:px-[6.25rem] px-[1.56rem] flex flex-row items-center'>
+        <section className='lg:px-[6.25rem] px-[1.56rem] flex flex-row items-center' id='About'>
           <img src="/images/why.svg" alt="# ladies smiling" className='lg:inline hidden' />
           <div>
             <h2 className='lg:text-[3.6rem] text-[3rem] font-bold text-gradient'>
@@ -299,7 +283,7 @@ const Home = () => {
             </div>
           </article>
         </section>
-        <section className='lg:py-[3.75rem] lg:px-[6.25rem] p-[1.56rem] flex flex-col items-center lg:mx-auto lg:text-center text-start'>
+        <section className='lg:py-[3.75rem] lg:px-[6.25rem] p-[1.56rem] flex flex-col items-center lg:mx-auto lg:text-center text-start' id='Features'>
           <article className='lg:w-[48rem] lg:mb-[6.25rem] mb-[2rem]'>
             <h2 className='text-[2B0E30] font-bold lg:text-[3rem] text-[2.2rem]'>
               What You’ll Find Inside
@@ -536,7 +520,7 @@ const Home = () => {
             </div>
           </article>
         </section>
-        <section className="flex flex-col justify-center lg:bg-[url('/images/experience.svg')] bg-[url('/images/experience2.svg')] bg-cover bg-center lg:py-[12.626rem] py-[5rem] text-center items-center text-[#FFFFFF]" >
+        <section className="flex flex-col justify-center lg:bg-[url('/images/experience.svg')] bg-[url('/images/experience2.svg')] bg-cover bg-center lg:py-[12.626rem] py-[5rem] text-center items-center text-[#FFFFFF]" id='Join' >
           <div className='lg:w-[50.25rem] w-[22.5rem]'>
             <h2 className='font-bold text-[2.6rem]'>
               Be the First to Experience HerDeen
@@ -546,7 +530,7 @@ const Home = () => {
             </p>
             <div className='flex flex-col relative items-start lg:mt-[4rem] mt-[5rem]'>
               <img src="/images/subscribers2.svg" alt="herDeen Subscribers" className='mt-[2rem] z-50 absolute -top-20' />
-              <div className='flex lg:flex-row flex-col gap-[1rem] mx-auto'>
+              <div className='flex lg:flex-row flex-col gap-[1rem] mx-auto w-fit'>
                 <div className='rounded-[1rem] border-[#62206E] bg-white border-[1px] lg:w-[33.75rem] px-[2rem] border-solid justify-between items-center shadow-lg flex lg:flex-row flex-col'>
                   <input
                     type="email"
@@ -612,7 +596,7 @@ const Home = () => {
               <a href="#">Feature</a>
               <a href="#">FAQs</a>
             </div>
-            <div className='flex flex-col lg:gap-[1.5rem] gap-[0.6rem] lg:pb-[0] pb-[2rem] lg:border-b-0 border-b-[#D6BCDB] border-b-[1px] border-solid'>
+            <div className='flex flex-col lg:gap-[1.5rem] gap-[0.6rem] lg:pb-[0] pb-[2rem] lg:border-b-0 border-b-[#D6BCDB] border-b-[1px] border-solid' id='Contact'>
               <h4 className='text-[#62206E] text-[1.25rem] font-bold'>
                 Contact Us
               </h4>

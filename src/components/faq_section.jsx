@@ -27,7 +27,7 @@ const faqData = [
 
 const FAQSection = () => {
   return (
-    <section className="py-[6.25rem] px-4 md:px-8 lg:px-16 bg-[#F8F6F9] bg-[url('/images/wavy.svg')] "> {/* Adjust background to match image */}
+    <section className="py-[6.25rem] px-4 md:px-8 lg:px-16 bg-[#F8F6F9] bg-[url('/images/wavy.svg')]" id='FAQs'> 
       <div className="w-fit mx-auto text-center mb-12">
         <h2 className="text-[1.6rem] md:text-5xl font-bold text-[2B0E30] mb-4">Got Any Question?</h2>
         <p className="text-[#444444] text-lg max-w-[25.5rem] ">
